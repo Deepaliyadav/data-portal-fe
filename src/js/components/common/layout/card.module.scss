@@ -1,0 +1,47 @@
+
+@import '../../../../css/mixins';
+
+.card {
+  @include border-radius(5px 5px 0 0);
+  // background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.title {
+  padding: 12px;
+  font-size: 1.4em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+// =============================================================== NAVBAR START ====================================================================
+
+.navbar-container {
+  background-color: #EEEDF3;
+  border-bottom: 1px solid rgba($color: #010024, $alpha: 0.1);
+  
+  :global {
+    .ant-menu .ant-menu-title-content {
+      font-family: Manrope Pro Bold;
+      font-size: 12px;
+      padding: 0 20px;
+    }
+    .ant-menu-light.ant-menu-horizontal > .ant-menu-item-selected {
+      color: var(--color-brand-secondary) !important;
+    }
+    .ant-menu-light.ant-menu-horizontal > .ant-menu-item {
+      top: 0px;
+    }
+    .ant-menu-horizontal {
+      line-height: 26px;
+    }
+    .ant-menu-horizontal > .ant-menu-item:after {
+      height: 3px;
+    }
+    .ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected::after {
+      background-color: var(--color-brand-secondary) !important;
+    }
+  }
+}
+
+// =============================================================== NAVBAR END ====================================================================

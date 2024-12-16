@@ -1,0 +1,406 @@
+@use "fonts";
+@use "mixins";
+@use "variables";
+@use "ant";
+
+.sr-only {
+  display: none;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Manrope Pro Regular';
+}
+
+#root {
+  height: inherit !important;
+}
+
+a,
+.link-color {
+  color: var(--color-link);
+}
+
+.type-link {
+  color: var(--color-link);
+  cursor: pointer;
+}
+
+.link-color-chat {
+  color: var(--color-brand-primary-dark-chat);
+}
+
+.secondary-color {
+  color: var(--color-brand-secondary);
+}
+
+/* Scroll */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-brand-primary);
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.4);
+}
+
+// ::-webkit-scrollbar-button:horizontal:end:increment,
+// ::-webkit-scrollbar-button:horizontal:start:decrement,
+// ::-webkit-scrollbar-button:vertical:end:increment,
+// ::-webkit-scrollbar-button:vertical:start:decrement {
+//   border: 1px solid;
+//   width: 8px;
+//   height: 8px;
+//   background: black;
+// }
+
+// ::-webkit-scrollbar-button:horizontal:end:increment,
+// ::-webkit-scrollbar-button:horizontal:start:decrement,
+// ::-webkit-scrollbar-button:vertical:end:increment,
+// ::-webkit-scrollbar-button:vertical:start:decrement {
+//   display: block;
+// }
+
+.horizontal-flow {
+  display: flex;
+  flex-direction: row;
+}
+
+.horizontal-flow-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.flex-wrap-wrap {
+  flex-wrap: wrap;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.cursor-default {
+  cursor: default;
+}
+
+.p-t-10 {
+  padding-top: 10px;
+}
+
+.m-t-20 {
+  margin-top: 20px;
+}
+
+.m-t-15 {
+  margin-top: 15px;
+}
+
+.m-t-10 {
+  margin-top: 10px;
+}
+
+.m-b-20 {
+  margin-bottom: 20px;
+}
+
+.m-l-20 {
+  margin-left: 20px;
+}
+
+.m-b-10 {
+  margin-bottom: 10px;
+}
+
+.m-r-15 {
+  margin-right: 15px;
+}
+
+.m-l-15 {
+  margin-left: 15px;
+}
+
+.m-r-10 {
+  margin-right: 10px;
+}
+
+.m-l-10 {
+  margin-left: 10px;
+}
+
+.m-b-10 {
+  margin-bottom: 10px;
+}
+
+.m-t-5 {
+  margin-top: 5px;
+}
+
+.m-l-5 {
+  margin-left: 5px;
+}
+
+.m-b-5 {
+  margin-bottom: 5px;
+}
+
+.p-r-20 {
+  padding-right: 20px;
+}
+.p-r-15 {
+  padding-right: 15px;
+}
+.p-r-10 {
+  padding-right: 10px;
+}
+
+.p-t-15 {
+  padding-top: 15px;
+}
+
+.p-l-15 {
+  padding-left: 15px;
+}
+
+.opacity-6 {
+  opacity: 0.6;
+}
+
+.opacity-8 {
+  opacity: 0.8;
+}
+
+.gutter-row label {
+  font-size: 13px !important;
+}
+
+.danger {
+  color: var(--color-danger);
+}
+
+.vertical-separator {
+  background: #a2aab1;
+  width: 1px;
+  height: 100%;
+  margin: 0 5px;
+}
+
+.horizontal-dashed-separator {
+  width: 100%;
+  height: 0;
+  border-top: 1px dashed #a2aab1;
+  margin: 5px 0;
+}
+
+.gutter-row-small {
+  label {
+    font-size: 13px !important;
+  }
+
+  .ant-legacy-form-item-control {
+    margin-bottom: 15px !important;
+  }
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.text-ellipses {
+  @include mixins.ellipsis();
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.font-15 {
+  font-size: 15px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.font-13 {
+  font-size: 13px;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+.font-11 {
+  font-size: 11px;
+}
+
+.font-10 {
+  font-size: 10px;
+}
+
+.line-height-1 {
+  line-height: 1;
+}
+
+.semibold {
+  font-family: Manrope Pro semibold;
+}
+
+.extrabold {
+  font-family: Manrope Pro ExtraBold;
+}
+
+.bold {
+  font-family: Manrope Pro bold;
+}
+
+.regular {
+  font-family: Manrope Pro Regular;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-link);
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: not-allowed;
+}
+
+.dynamic-list {
+  margin: 15px 15px 0;
+  width: calc(100% - 30px);
+}
+
+svg {
+  width: inherit;
+  height: inherit;
+}
+
+.add-btn {
+  background: var(--color-link);
+  display: flex;
+  width: 34px;
+  min-width: 34px;
+  height: 34px;
+  margin: auto 0 auto 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.add-icon {
+  color: #fff !important;
+  width: 14px;
+}
+
+.add-btn-1 {
+  background: var(--color-brand-secondary) !important;
+  border-color: var(--color-brand-secondary) !important;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+  color: #fff !important;
+  font-family: Manrope Pro Semibold;
+  font-size: 12px;
+  padding: 0 15px;
+}
+
+.delete-btn {
+  width: 100px;
+  height: 39px;
+  border-radius: 2px;
+  background-color: var(--color-danger) !important;
+  border-color: var(--color-danger) !important;
+}
+
+.success-btn {
+  width: 100px;
+  height: 39px;
+  border-radius: 2px;
+  background-color: var(--color-success) !important;
+  border-color: var(--color-success) !important;
+}
+
+.create-btn {
+  padding: 12px 45px;
+  height: auto;
+  border-radius: 3px;
+  background-color: var(--color-brand-primary) !important;
+  color: #fff !important;
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.form {
+  height: 100%;
+}
+
+.table-action-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+.table-disable-div {
+  cursor: default;
+  opacity: 0.7;
+  color: #757575;
+  // :global {
+  //   .anticon {
+  //     cursor: default !important;
+  //   }
+  //   .anticon[tabindex] {
+  //     cursor: default;
+  //   }
+  // }
+}

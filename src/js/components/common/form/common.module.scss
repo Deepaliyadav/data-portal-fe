@@ -1,0 +1,179 @@
+// ======================================================== RADIO START ==========================================
+
+.filter-div {
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    list-style: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    :global {
+        .ant-radio-button-wrapper {
+            text-align: center;
+            font-size: 13px;
+            position: relative;
+            display: inline-block;
+            height: 32px;
+            margin: 0;
+            padding: 0 15px;
+            line-height: 30px;
+            border-top-width: 1.02px;
+            border-radius: 4px;
+            transition: color .3s, background .3s, border-color .3s, box-shadow .3s;
+            border: 1px solid rgb(245, 245, 245);
+        }
+        .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+            color: rgb(255, 255, 255);
+            background: var(--color-brand-primary);
+            border-color: var(--color-brand-primary);
+        }
+        .ant-radio-button-wrapper:not(:first-child)::before {
+            display: none;
+        }
+    }
+}
+
+// ======================================================== RADIO END ==========================================
+
+// ======================================================== COLOR FIELD START ==========================================
+
+
+.color-field {
+    background: white;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    padding: 0 14px 0 4px;
+    height: 33px;
+    margin-right: 4px;
+    display: flex;
+  
+    .selector {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+  
+      .text {
+        margin-top: -4px;
+        font-size: 13px;
+        padding-left: 6px;
+        width: 100%;
+      }
+      .icon {
+        width: 8px;
+      }
+    }
+  
+    :global {
+      .css-12xwhem-Slider {
+        display: block !important;
+      }
+  
+      .css-1j0mc3w-ColorPicker,
+      .css-1kx576s {
+        input {
+          border: 1px solid #767676;
+          border-radius: 1px;
+        }
+      }
+  
+      .ant-color-picker-trigger {
+        background: white !important;
+        border: none;
+        height: 31px !important;
+      }
+  
+      .ant-color-picker-trigger:hover {
+        box-shadow: none !important;
+      }
+  
+      .ant-color-picker-trigger.ant-color-picker-trigger-active {
+        box-shadow: none !important;
+      }
+  
+      .ant-color-picker-trigger .ant-color-picker-color-block {
+        width: 20px !important;
+        height: 20px !important;
+      }
+  
+      .ant-input-group-addon {
+        color: rgba(0, 0, 0, 0.7);
+        border: none !important;
+        background: #f5f5f5;
+        // padding-top: 5px;
+      }
+  
+      .ant-input-group-wrapper {
+        vertical-align: middle;
+      }
+  
+      .ant-input-disabled {
+        color: rgba(0, 0, 0, 0.7);
+        border: none !important;
+        resize: none;
+        padding-left: 0;
+      }
+  
+      .ant-input-group-wrapper-disabled .ant-input-group-addon {
+        cursor: default;
+      }
+    }
+  }
+
+// ======================================================== COLOR FIELD END ==========================================
+
+// ======================================================== EMOJI FIELD END ==========================================
+
+.emoji-popover-overlay {
+  :global {
+    .ant-popover-inner-content {
+      max-height: 500px;
+      padding: unset !important;
+    }
+  }
+}
+
+.emoji-container {
+  border: 1px solid #00001B66;
+  border-radius: 3px;
+  height: 25px;
+  padding: 4px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 19px;
+  background: var(--text-color);
+
+  :global {
+    .anticon {
+      color: #010024;
+      opacity: 0.56;
+      font-size: 14px;
+    }
+  }
+  }
+  
+.emoji-div{
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(0, 112, 210, 0.3411764706);
+  font-size: 14px;
+  position: relative;
+  margin-right: 4px;
+>div{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+em-emoji-picker{
+  height: 220px !important;
+  min-height: unset;
+}
+  }
+
+// ======================================================== EMOJI FIELD END ==========================================

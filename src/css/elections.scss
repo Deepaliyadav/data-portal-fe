@@ -1,0 +1,102 @@
+:root {
+
+    /* Main Colors */
+    
+    --color-brand-primary:              #5350EA;
+    --color-brand-primary-dark:         #005fb2;
+    --color-selection-primary-nav:      var(--color-brand-primary);
+    --color-brand-secondary:            #3B3A94;
+    --color-brand-selection:            #e7f2ff;
+    
+    /* Chat Colors */
+    
+    --color-brand-primary-chat:         #0079E2;
+    --color-brand-primary-light-chat:   #0d7fe5;
+    --color-brand-primary-light-2-chat: #1892FC;
+    --color-brand-primary-dark-chat:    #036DCE;
+    --color-brand-secondary-chat:       #FF8204;
+    
+    
+    --body-bg:                          #F4F6F9;
+    
+    --color-success:                    #2BAD91;
+    --color-danger:                     #E34F45;
+    --color-warning:                    #FED017;
+    --color-info:                       #1ABC9C;
+    
+    --color-link:                       #5350EA;
+    
+    /* Status */       
+    
+    --color-status-danger:              #efd6d6;
+    --color-status-success:             #d5e9ce;
+    --color-status-pending:             #DEDEDE;
+    --color-status-default:             #F5F5F5;
+    
+    /* Header */       
+    
+    --color-header-bg:                  #082043;
+    
+    /* Navbar */       
+    
+    --navbar-height:                    60px;
+    
+    /* Footer */       
+    
+    --footer-height:                    40px;
+    
+    /* Typography */       
+    
+    --font-family-base:                 'SFS', Arial, sans-serif;
+    
+    /* Font Sizes */       
+    
+    --font-size-global:                 1rem;
+    --font-size-h1:                     1.5rem;
+    --font-size-h2:                     1.33rem;
+    --font-size-h3:                     1.167rem;
+    --font-size-h4:                     1.167rem;
+    --font-size-h5:                     1rem;
+    --font-size-h6:                     1rem;
+    --font-size-table-th:               1.1rem;
+    --font-size-nav:                    1.2rem;
+    --font-size-p:                      1rem;
+    --font-size-button:                 1.2rem;
+    --font-size-input:                  1.1rem;
+    --font-size-dropdown:               1.1rem;
+    --font-size-label:                  1.1rem;
+    
+    /* Forms */       
+    
+    --color-input-background:           #f6f6f6;
+    --color-input-border:               #ccc;
+    --color-input-text:                 #666;
+    --color-grid-head:                  rgb(7, 30, 68);
+    --color-grid-alt1:                  #fff;
+    --color-grid-alt2:                  #fff;
+    --color-grid-hover:                 #f8f8f8;
+    --color-grid-border:                #ebebeb;
+    --color-hover-shadow:               0 2px 6px rgba(0, 0, 0, 0.2);
+    --color-focus-shadow:               0 2px 6px rgba(0, 0, 0, 0.2);
+    --color-input-error:                var(--color-danger);
+    --input-radius:                     4px;
+    --input-radius-left:                4px 0 0 4px;
+    --input-radius-right:               0 4px 4px 0;
+    --input-radius-top:                 4px 4px 0 0;
+    --input-radius-bottom:              0 0 4px 4px;
+    
+    /* Pagination */       
+    
+    --color-pager-bg:                   #FBFBFB;
+    --color-pager-border:               #ebebeb;
+    --color-pager-link:                 #5a5a5a;
+    --color-pager-icon:                 #959595;
+    --color-pager-active-border:        #000;
+    --color-pager-active-link:          #000;
+    
+    /* Dashboard modal*/       
+    
+    --color-dash-primary:               #768e97;
+    --color-dash-success:               #3dda59;
+    
+    }

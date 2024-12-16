@@ -1,0 +1,67 @@
+.captchaContainer {
+    :global {
+      .ant-input {
+        text-align: center;
+      }
+    }
+    .imgContainer {
+     text-align: center;
+      .sync {
+        width: fit-content;
+        padding: 3px 8px;
+        cursor: pointer;
+        float: right;
+        margin-top: 18px;
+      }
+    }
+  
+    .msgContainer {
+      text-align: center;
+  
+      h6 {
+        font-size: 15px;
+      }
+    }
+  }
+  
+  .captchaHorizentalContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border: 1px solid #E8EAED;
+    border-radius: 4px;
+    background-color: #FBFCFC;
+    gap: 30px;
+    margin: 0px 30px;
+    background: #0000000A;
+    margin-bottom: 10px;
+    h6 {
+      font-size: 15px;
+    }
+    .imgContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+  
+      .sync {
+        width: fit-content;
+        padding: 3px 8px;
+        cursor: pointer;
+        float: right;
+        margin-top: 18px;
+      }
+    }
+    .captchaRightContainer{
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    :global {
+      .ant-input {
+        text-align: center;
+        height: 40px;
+      }
+    }
+  }

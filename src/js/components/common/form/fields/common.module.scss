@@ -1,0 +1,8 @@
+.select-component {
+  width: 100%;
+    :global {
+      .ant-select-single .ant-select-selector {
+        border-radius: 0px !important;
+      }
+    }
+  }

@@ -1,0 +1,112 @@
+.layout {
+  //   height: 100%;
+  //   color: #16325c;
+  //   width: 100%;
+  //   overflow: auto;
+  //   -webkit-overflow-scrolling: touch;
+  //   background-position: center center;
+  //   background-repeat: no-repeat;
+  //   background-attachment: fixed;
+  //   background-size: cover;
+
+  .content {
+    width: 50%;
+    height: 100vh;
+    .logo {
+      width: 125px;
+      margin-bottom: 15px;
+    }
+
+    .title {
+      margin-top: 2px;
+      margin-bottom: 4px;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .description {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 16px;
+    }
+  }
+
+  .right {
+    height: 100vh;
+    vertical-align: middle;
+    background: darkgrey;
+
+    .signup {
+      //   background: url(../../../../../../img/antrikaSignupbg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      width: 100%;
+      position: relative;
+      // background-repeat: no-repeat;
+      // background-size: 100% 100%;
+      // background-position: center;
+      // height: 100vh;
+      // vertical-align: middle;
+      // width: 100%;
+
+      .header {
+        height: 100px;
+        padding: 35px 40px;
+        .logo {
+          float: left;
+          img {
+            width: 150px;
+          }
+        }
+      }
+
+      .content {
+        padding: 30px 30px 0 30px;
+        color: white;
+        .heading {
+          font-size: 30px;
+          font-family: "Manrope Pro Semibold";
+        }
+        .subHeading {
+          font-size: 20px;
+          margin-bottom: 30px;
+          margin: 20px 0px 30px 0px;
+        }
+        .desc {
+          font-size: 20px;
+          .descTitle {
+            font-size: 22px;
+            color: #ffc284;
+          }
+        }
+      }
+      .footer {
+        position: absolute;
+        bottom: 15px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #fff;
+        opacity: 0.4;
+      }
+    }
+  }
+}
+
+.logo {
+  height: 100px;
+  display: block;
+  margin: 0 auto 1.5rem;
+}
+
+.card {
+  border: 1px solid #22283133;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 0 0 20px 0;
+  max-width: 380px;
+  width: 100%;
+  margin: auto;
+}

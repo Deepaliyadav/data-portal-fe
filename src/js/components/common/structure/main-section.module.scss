@@ -1,0 +1,153 @@
+@use "../../../../css/mixins";
+
+.main-container {
+  height: 100%;
+  background: var(--content-bg);
+  width: 100%;
+  .main-container-header {
+    width: calc(100% - 27px);
+    background-color: var(--header-bg);
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0px 7px 25px;
+    height: 35px;
+    border-bottom: 1px solid var(--header-border-color);
+  }
+  .container-body {
+    height: calc(100% - 50px);
+    // margin: 20px 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+// left section start
+
+.left-container {
+  display: flex;
+  width: 100%;
+
+  .inner-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .avatar {
+    width: 27px;
+    height: 27px;
+    background-color: var(--color-brand-primary);
+    border-radius: 6px;
+    margin: auto 12px auto 15px;
+    padding: 8px;
+    color: white;
+
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  .page-title {
+    color: var(--heading-color);
+    font-family: Manrope Pro Bold;
+    font-size: 24px;
+    white-space: nowrap;
+    line-height: 31px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .page-subtitle {
+    font-size: 12px;
+    max-width: 200px;
+    @include mixins.ellipsis();
+    line-height: 15px;
+  }
+}
+
+// left section end
+
+// content title bar start
+
+.content-title-bar {
+    position: relative;
+    height: 100%;
+
+    .refresh-icon {
+      color: #646464;
+      height: 13px;
+      width: 15px;
+    }
+
+    :global {
+        
+        .ant-input-affix-wrapper {
+          background-color: #E7E5F54D;
+          border-color: #01002426;
+          border-radius: 2px !important;
+          height: 33px;
+        }
+        .ant-input-outlined:focus, .ant-input-outlined:focus-within {
+            box-shadow: unset;
+        }
+        .anticon {
+            color: #010024A6;
+        }
+    }
+}
+
+// content title bar end
+
+
+// title bar start
+.titleBar {
+  color: var(--color-input-text);
+  padding: 0 24px 0 27px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: transparent;
+
+  .search {
+    :global {
+
+      .ant-input {
+        height: 23px;
+        color: #010024A6;
+        font-family: 'Manrope Pro Semibold';
+        font-size: 13px;
+      }
+      .ant-btn {
+        margin: 11px 0 0 10px;
+      }
+  
+      .ant-btn-primary:disabled:hover {
+        background-color: rgba(0, 0, 0, 0.04);
+      }
+  
+      .ant-input-search {
+        width: 180px;
+  
+        .ant-btn {
+          margin: 0;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+
+}
+
+.title {
+  // flex-grow: 1;
+  color: #293846;
+  margin: auto 0;
+  font-size: 15px;
+  line-height: 30px;
+  // @include ellipsis();
+}
+
+
+// title bar end

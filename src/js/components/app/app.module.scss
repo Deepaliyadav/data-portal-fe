@@ -1,0 +1,11 @@
+
+.main-container {
+    height: 100%;
+    overflow: auto;
+
+    .bottom-main {
+        height: calc(100% - 40px);
+        display: flex;
+        overflow: auto;
+    }
+}
